@@ -7,18 +7,10 @@ if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password']
   $password=$_POST['password'];
 
   if(!empty(('pseudo') && !empty('email') && !empty('password'))){
-    // echo 'Pseudo: '.$pseudo;
-    // echo '<br/>';
-    // echo 'email: '.$email;
-    // echo '<br/>';
-    // echo 'Mdp: '.$password;
-    // echo '<br/>';
-
-
+  
     $_SESSION['pseudo']=$pseudo;
     $_SESSION['email']=$email;
     $_SESSION['password']=$password;
-
 
   }
   else{
